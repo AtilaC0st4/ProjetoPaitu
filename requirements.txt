@@ -1,0 +1,7 @@
+pandas
+seaborn
+matplotlib
+scikit-learn
+numpy
+request
+# ! pip install --quiet -r requirements.txt
