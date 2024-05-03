@@ -1,31 +1,19 @@
 from flask import Flask, render_template
- 
- 
+import requests
+import pandas as pd
+
 app = Flask(__name__)
- 
+
+
 @app.route('/')
-def home():
-    return render_template('index.html')
- 
-@app.route('/sobre')
-def sobre():
-    return render_template('sobre.html')
+def dados_coletados():
+    url = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.22912/dados?formato=json"
+    response = requests.get(url)
+    if response.status_code == 200:
+        dados_ativos = response.json()
+        return render_template('dados.html', dados=dados_ativos)
+    else:
+        return "Erro ao conseguir os dados! Status Code: {}".format(response.status_code)
 
-@app.route('/calculadora')
-def calculadora():
-    return render_template('calculadora.html') 
-
-# @app.route('/enviar')
-# def enviar():
-
-    #     variaveis de acordo com o forms para salvar 
-    
-    # return 
-
-
- 
- 
- 
- 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
