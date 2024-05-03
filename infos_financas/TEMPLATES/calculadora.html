@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="global.css">
 </head>
 
 <h1>Calcule seu Investimento</h1>
 
-<form action="POST">
+<form action="/calculadora">
     <label for="Escolha">Escolha as Taxas:</label>
     <select id="Escolha" name="Escolha">
         <option value="Taxa 1">Taxa 1</option>
@@ -22,6 +23,7 @@
     <input type="date" name="dataInicial" id="dataInicial">
     <label for="dataFinal">Selecione a data Final:</label>
     <input type="date" name="dataFinal" id="dataFinal">
+    <button type="submit">Enviar</button>
 </form>
 
 </body>
