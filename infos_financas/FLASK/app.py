@@ -31,3 +31,14 @@ def dados_2():
     else:
         return "Erro ao conseguir os dados! Status Code: {}".format(response.status_code)
     
+
+@app.route("/Aquisicao")
+def dados_3():
+    url = ""
+    response = requests.get(url)
+    if response.status_code == 200:
+            dados_ativos = response.json()
+            return render_template('dados2.html', dados=dados_ativos)
+    else:
+            return "Erro ao conseguir os dados! Status Code: {}".format(response.status_code)
+        
