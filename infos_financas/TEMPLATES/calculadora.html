@@ -1,31 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>ZéDoBiái</title>
     <link rel="stylesheet" href="global.css">
 </head>
 
-<h1>Calcule seu Investimento</h1>
+<body>
 
-<form action="/calculadora">
-    <label for="Escolha">Escolha as Taxas:</label>
-    <select id="Escolha" name="Escolha">
-        <option value="Taxa 1">Taxa 1</option>
-        <option value="Taxa 2">Taxa 2</option>
-        <option value="Taxa 3">Taxa 3</option>
-    </select>
+    <header class="cabecalho">
+        <a href="index.html"><img src="assets/Logo.png"></a>
 
-    <p>Escolha o periodo:</p>
-    <label for="dataInicial">Selecione a data inicial:</label>
-    <input type="date" name="dataInicial" id="dataInicial">
-    <label for="dataFinal">Selecione a data Final:</label>
-    <input type="date" name="dataFinal" id="dataFinal">
-    <button type="submit">Enviar</button>
-</form>
+        <nav class="menuHeader">
 
-</body>
+            <ul>
+                <a href="">
+                    <li>Sobre Nós</li>
+                </a>
+                <a href="">
+                    <li>Calculadora</li>
+                </a>
+                <a href="">
+                    <li>Selic</li>
+                </a>
+                <a href="">
+                    <li>FI´s Ativos Fi´s Passivos</li>
+                </a>
+                <a href="">
+                    <li>Cotação</li>
+                </a>
+            </ul>
 
-</html>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <Section class="explicacao">
+
+            <h1>Explicação sobre a calculadora</h1>
+
+        </Section>
+
+
+        <Section class="calculadora">
+            <div class="conteudoCalculadora">
+            <form action="">
+
+                <label>Valor Inicial:<input type="text"></label>
+
+                <label>Valor de aporte:<input type="text"></label>
+
+                <label>Quantidade de meses:<input type="text"></label>
+
+                <button>Calcular</button>
+
+            </form>
+
+            <div class="grafico"> span grafico </div>
+        </div>
+        <div class="extrato">
+            <span>extrato</span>
+        </div>
+
+        </Section>
+
+
+
+    </main>
+
+
+    <footer>
+
+        <p>&copy; 2024 ZéDoBiái</p>
+
+        <ul>
+            <li>Átila Rebolo Moita da Costa - RM 552650</li>
+            <li>Gabriel Artacho Plasa Moreira - RM 553527</li>
+            <li>José Ribeiro dos Santos Neto - RM 553844</li>
+            <li>Lorenzo Augusto Vaz Francisco - RM 553941</li>
+        </ul>
+
+    </footer>
